@@ -29,7 +29,11 @@ jobs:
       - name:       - name: Montar pasta do site
         run: |
           mkdir _site
-          cp esteira-github/index.html esteira-github/style.css esteira-github/script.js esteira-github/logic.js _site/
+          cp esteira-github/esteira-github/index.html \
+             esteira-github/esteira-github/style.css \
+             esteira-github/esteira-github/script.js \
+             esteira-github/esteira-github/logic.js \
+             _site/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
