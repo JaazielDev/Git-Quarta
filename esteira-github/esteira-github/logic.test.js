@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { addTask, toggleTask, removeTask, countPending } from './logic.js';
 
 test('adiciona tarefa', () => {
-  assert.equal(addTask([], 'Estudar Git').length, 2);
+  assert.equal(addTask([], 'Estudar Git').length, 1);
 });
 
 test('ignora texto vazio', () => {
